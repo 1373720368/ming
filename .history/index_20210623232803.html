@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title><%- title %></title>
+    ......
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var global = globalThis || window; // 防止启动报错
+    </script>
+    <%- injectScript %>
+    <script type="module" src="/src/index.jsx"></script>
+</body>
+</html>
